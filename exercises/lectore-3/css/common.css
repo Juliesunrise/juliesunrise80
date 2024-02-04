@@ -1,0 +1,14 @@
+:root{
+--primary-text-color: #000;
+--primary-bg-color: #fff;
+}
+html{
+color:var(--primary-text-color);
+background-color:var(--primary-bg-color)  
+}
+body footer{
+--footer-text-color: #fff;
+--fuuter-bg-color: #000;
+color:#fff;
+background-color: #000;
+}
