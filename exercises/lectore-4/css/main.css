@@ -1,0 +1,66 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-size: 140%;
+}
+h1{
+    font-size: 240%;
+}
+h1, h2, h3{
+    color:grey;
+}
+#main{
+    color: #e60202;
+}
+
+.h2{
+    color:red;
+     /*color:#ff0000;
+       color:rgb(255, 0, 0);
+       color:hsl(0, 100%, 50%); 
+       color:hsla(hsl(0, 100%, 50%,0.3);*/
+}
+.heading{
+    color:green;
+     /*color:#00ff00;
+       color:rgb(0, 255, 0);
+       color:hsl(120, 100%, 50%); 
+       color:hsla(120, 100%, 50%,0.6);*/
+}
+ul>li{
+    font-weight: bold;
+}
+section > p {
+  color: red;
+  /*#ff0000
+  rgb(255, 0, 0)
+  hsl(0, 100%, 50%)*/
+  font-size: 20px;
+ }
+ /*Чи зміниться  Чи зміниться колір тексту p всередині елемента div?
+ Відповідь: не зміниться, зміниться колір р,який є дочірнім для section*/
+
+ /*section p{
+    font-size: 20px;
+ }*/
+ h1+h2{
+    color:indigo;
+ }
+ .first>a{
+    color:green;
+ }
+ body>div p{
+    color:salmon;
+ }
+ td{
+    width: 150px;
+    text-align: center;
+ }
+ .translucent-box{
+    background-color: hsla(0,100%,50%,0.5);
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    margin-top: 20px;
+ }
