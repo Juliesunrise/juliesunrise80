@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.negative{
+    background:linear-gradient(to left,#efeff5 -50%, #c1c4e2 -10%, #7b84e6 0%, #111974 100%,#01052e 150%) ;
+    height: 100px;
+}
+.percents{
+    height: 200px;
+    background: linear-gradient(to bottom,#b7f5b4 2em,#88f595 4em,#3caf4a 8em,#159c24 16em,#085511 32em, #0d3d12 64em,#142e16 128em);
+       
+}  
+.radial{
+background: radial-gradient(ellipse at top, rgb(247, 176, 25), rgba(255, 255, 255,0)), 
+             radial-gradient(ellipse at bottom,rgb(243, 25, 9), rgba(255, 255, 255,0));
+height: 300px;
+}
+svg rect{
+  fill: lightgray;
+        stroke:#1c87c9;     
+   }
