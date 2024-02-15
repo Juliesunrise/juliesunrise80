@@ -19,31 +19,26 @@ background-color:rgba(0,255,0,0.25) ;
 input:out-of-range{
     background-color:rgba(255,0,0,0.25);
 }
-body>ul:nth-child(3){
-    li:first-child{
+
+li:first-child{
     color:orange;
-}}
-body>ul:nth-child(4){
-    li:first-child,
-    li>span:first-child{
-                color:orange;
-            }
-        }
+}
+ul: first-of-type{
+      color:orange;
+ li:first-of-type+li{
+color:#00d42a;
+}
+        
   
 body>ul:nth-child(5){
     li:last-child,
       li>span:last-child{
 color: orange;
-}}
-/*body>ul:nth-child(5):last-of-type{   
-    color: orange;
-}*/
-
-/*body>ul:nth-child(6){
-    li:not(.first-item){
-        color:orange;
-    }
-}*/
+}
+}
+li:not(.first-item){
+color:orange;
+}
 body>ul:nth-child(6){
     li:not(.first-item):not(:last-of-type){
         color:black;
