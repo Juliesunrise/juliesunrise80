@@ -2,10 +2,10 @@ html{
     font-size: 100%;
 }
 body{
-    font-size: 140%;
+    font-size: 1.4rem;
 }
 h1{
-    font-size: 240%;
+    font-size: 2.4rem;
 }
 h1, h2, h3{
     color:grey;
@@ -50,7 +50,7 @@ section > p {
  .first>a{
     color:green;
  }
- body>div p{
+ div~p{
     color:salmon;
  }
  td{
