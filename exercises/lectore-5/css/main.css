@@ -3,7 +3,7 @@ body{
 }
 
 div{
-    font-size: 1.6em;
+    font-size: 1em;
 }
 /*div{
     font-size: 1.6em;
@@ -20,6 +20,6 @@ div>span>span{
 div~strong{
     font-size: 1.6em;
 }
-ul{
+ul li{
     list-style-type: square;
 }
