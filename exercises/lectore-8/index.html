@@ -28,7 +28,7 @@
 		margin-bottom: 25px; 
 		margin-left:20px;*/
 
-        padding: 10px 20px 25px 20px;
+       padding: 10px 20px 25px 20px;
         margin: 25px 20px;
       }
 
@@ -38,7 +38,7 @@
 
       .box {
         width: 300px;
-        padding: 10px;
+        padding:10px;
         border: 2px dashed #077703;
       }
       /*Обчислити ширину і висоту елемента .first-box
@@ -49,8 +49,8 @@
       .first-box {
          width: 200px;
          height: 100px;
-         border: 8px solid blue;
          padding: 20px;
+         border: 8px solid blue;         
          background: yellow;
       }
       /*Обчислити ширину і висоту елемента .second-box
@@ -67,13 +67,13 @@
       /*Обчислити ширину елемента div
       оскільки встановлено box-sizing:content-box,
       то ширина елементу div буде дорівнювати 200рх+8рх*2+20рх*2=256рх */
-        /*div{
+        div{
            box-sizing:content-box;
            width: 200px;
            border: 8px solid blue;
            padding: 20px;
            background: yellow;
-       }*/
+       }
        /*Обчислити ширину елемента div
       оскільки встановлено box-sizing:border-box,
       то ширина елементу div буде дорівнювати 200рх */
@@ -86,25 +86,24 @@
        }
         /*Завдання 7*/
        div {
-    border: 10px dotted black;
-    padding: 15px;
-    background: lightblue;
-  }
+           border: 10px dotted black;
+           padding: 15px;  
+           margin:10px;  
+           background: lightblue;
+       } 
   /*Для кожного з example1б example2, example3 встановити властивість background-clip згідно з правилами, визначеними у відповідному параграфі*/
     #example1{
    background-clip: border-box;
     }
    #example2{
-    background-clip:padding-box;
+     background-clip:padding-box;
    }
-   #example3{
-     
+   #example3{     
       background-clip: content-box;
-
    }
    h1{
     display: inline-block;
-  width: min-content;
+    width: min-content;
    }
     </style>
   </head>
@@ -123,9 +122,6 @@
 
   <div id="example3">
     <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
-  </div>
-  <div class="div3">
-
-  </div>
+  </div> 
   </body>
 </html>
