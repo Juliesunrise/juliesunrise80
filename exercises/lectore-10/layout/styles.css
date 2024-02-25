@@ -1,0 +1,17 @@
+body {
+  --padding: 5vw;
+  --max-width: 180ch;
+}
+
+.flexbox {
+  --min: 30ch;
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card{
+min-height:var(--min);
+}
