@@ -13,23 +13,24 @@
     background: #fff;
     font-family: Arial, sans-serif;
     padding: 1em;
-   font-size:clamp(16px, calc(20px+(36-20)*(100vw-768px)/(1920-768)), 48px);
+   font-size:clamp(16px, calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)), 48px);
   }
  
 
-  @media only screen and (min-width:768px) and (max-width:1920px){ 
+   @media (min-width:768px)and(max-width:1920px){ 
     body{
-        font-size:calc(20px+(36-20)*(100vw-768px)/(1920-768));
+        font-size:calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768));
     }
    }
     
-    @media only screen and (max-width:768px){
-   body{
+    @media (max-width:768px) {
+        body{
+        
         font-size: 16px;
-    }
+       }
    }
 
-   @media only screen and (min-width:1920px){
+     @media (min-width:1920px) {
     body{
         font-size: 48px;
     }
