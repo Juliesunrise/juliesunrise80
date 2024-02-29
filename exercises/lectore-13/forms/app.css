@@ -7,7 +7,7 @@
 :root {
   --form-color: #44c7f5; 
   --active-color: #ff574e;
-  --padding-form:calc(30/16*1rem);
+  --padding-form:calc(30/16*1rem);/*завдання 2*/
 }
 
 body {
@@ -17,17 +17,19 @@ body {
 }
 
 .wrapper {
-border:2px solid green;
+  /*завдання 4*/
+margin: 0 auto;
 width: 100%;
-max-width: 7rem;
+max-width: 70rem;
 min-height: 100vh; 
 display: flex;
 flex-direction: column;
+align-items: center;
 justify-content: center;
-align-content: center;
 }
 
 .form-container {
+  /*завдання 5*/
     width: 100%;
     max-width: 40rem;
     height: auto;
@@ -35,19 +37,26 @@ align-content: center;
     background-color: #fff;
     display: grid;
     grid-template-columns: 50% 50%;
-   
+   gap: .8em;
+   grid-auto-rows: auto;
 }
 
 .col-left,
 .col-right {
+  /*завдання 6*/
+  display: flex;
+  padding: var(--padding-form);
 }
 
 .col-left {
   background: var(--form-color);
+  /*завдання 7*/
+ clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
 }
 
 .col-right {
-  padding: 60px 30px;
+  /*завдання 8*/
+  padding: 3.75rem 1.875rem;
   margin-left: -10%;
 }
 
@@ -140,8 +149,39 @@ align-content: center;
   border: 1px solid gray;
   border-radius: 30px;
 }
-
-
+  /*завдання 9*/
+.login-form input:focus{
+  border-color: var(--active-color);
+} 
+/*завдання10*/
+input[type="submit"]{
+  display: inline-block;
+  width: 100px;
+  margin-top: 5px;
+  color:var(--form-color);
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--form-color);
+  border-radius: 30px;
+}
+/*завдання11*/
+input[type="submit"]:hover{
+color: white;
+background-color: var(--form-color);
+}
 @media(max-width: 35rem) {
-  
+  /*завдання 12*/
+  .form-container{
+      flex-direction: column;
+      box-shadow: none;
+  }
+  .col-left, .col-right{
+    width: 100%;
+    margin: 0;
+    clip-path: none;
+  }
+  .col-right{
+    padding: var(--padding-form);
+  }
 }

@@ -7,19 +7,23 @@ table{
     margin: 3rem auto;
 }
 th{
+  /*Завдання 3*/
 background-color: indigo;
 color: white;
 }
 td,th{
+  /*Завдання 2*/
 padding: 0.625rem;
 border:1px solid lightgray;
 text-align: left;
 font-size: 1.125rem;
 }
+/*Завдання 4*/
 tr:nth-child(odd){
     background-color: lightgrey;
 }
 @media(max-width:50rem){
+  /*Завдання 5*/
      table,thead,tbody,th,td,tr{
       display: block;
      }
