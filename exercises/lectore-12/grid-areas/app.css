@@ -24,11 +24,11 @@
 }
 
 
-
-@media (max-width: 786px){
-    .grid-container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+@media (min-width: 786px) {
+.grid-container {
+grid-template-areas:
+'header header header'
+'sidebar main main'
+'footer footer footer';
+}
 }
