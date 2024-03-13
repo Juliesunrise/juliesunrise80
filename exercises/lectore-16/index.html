@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+    
+    <script>
+          //Завдання 1//
+          let message1='Hello';
+          let message2='JavaScript';       
+          alert(message1+' '+message2+'!');
+
+
+          //Завдання 2 відповідь:помилка у коді неоголошена змінна
+          'use strict';      
+          let message = 'hello';
+             message = 123456; 
+
+          //Завдання 3   
+          let numX=+prompt("Введіть число x: ");
+          let numY=+prompt("Введіть число y: ")
+          let sum=numX+numY
+          alert(`Сума х+у дорівнює ${sum}`);
+          
+          //Завдання 4           
+          'use strict';
+          let a = 9007199254740991;
+          let b = 9007199254740991n;
+          console.log(BigInt(a)+b); 
+          // Uncaught TypeError: can't convert BigInt to number
+  
+          //Завдання 5
+         'use strict';
+          let apples = "2";
+          let oranges = "3";
+          alert( Number(apples) + Number(oranges) ); 
+
+          //Завдання 6  відповідь: a=2, b=2, c=2, d=2
+          'use strict';
+          let a = 1, b = 1;
+          let c = ++a; // ?
+          let d = b++; // ?
+          
+          //Завдання 7    відповідь: a=4, x=5
+          'use strict';
+           let a = 2;
+           let x = 1 + (a *= 2);
+          
+           //Завдання 8
+           'use strict';
+           "" + 1 + 0              //відповідь: 10
+           "" - 1 + 0              //відповідь: -1
+           true + false            //відповідь:  1  
+           6 / "3"                 //відповідь:  2
+           "2" * "3"               //відповідь:  6
+           4 + 5 + "px"            //відповідь: 9px
+           "$" + 4 + 5             //відповідь: $45
+           "4" - 2                 //відповідь:  2
+           "4px" - 2               //відповідь:  NaN
+           "  -9  " + 5            //відповідь: -95
+           "  -9  " - 5            //відповідь: -14
+           null + 1                //відповідь:   1
+           undefined + 1           //відповідь:  NaN
+           NaN + 1                 //відповідь:  NaN
+
+           //Завдання 9
+            'use strict';
+            // скоротити цей код за допомогою операторів += і *=:
+            let n = 2;
+           // n = n + 5;   
+              n+=5;
+           // n = n * 2;
+              n*=2;
+
+             //Завдання 10
+             let n1 = "   123   ";
+             let n2 = "123z";
+             let n3 = true;
+             let n4 = false;     
+           /* let m1=Number(n1)
+              let m2=parseInt(n2)
+              let m3=Number(n3)
+              let m4=Number(n4)
+              console.log(m1,m2,m3,m4)*/
+             console.log(Number(n1),parseInt(n2), Number(n3), Number(n4));
+             // Перетворити змінні n1, n2, n3, n4 на числа 
+    </script>
+</body>
+</html>
