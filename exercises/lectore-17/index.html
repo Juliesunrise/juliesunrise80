@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //Завдання 1
+     /*let x = 3
+     let y = 4
+
+     x == 3
+     x === "3"
+     x!=5
+     x!== "5"
+     X!== 3
+     y > 5
+     y >= 3
+     y < 5
+     y <= 2
+     1 == true
+     null == undefined
+     NaN == NaN 
+   
+     //Завдання 2
+     let x = 3;
+     let y = 4;
+     let z = 5;
+
+     x ||= y;
+     x || (y = z);
+     x &&= y;
+     x && (y = z);
+     x ??= y;
+     x ?? (y = z);*/
+
+     //Завдання 3
+     /*let num=+prompt("Вгадайте число: ")
+     if(num==3){
+        console.log(alert('Congratulations, You did it!'))
+     }else if(num<3){
+        console.log(alert('The number is short'))
+     }else {
+        console.log(alert('The number is too long'))
+     }*/
+
+      //Завдання 4
+     /* let day=prompt('Please,enter the day of the week')
+    if (day=='Monday'){
+        console.log(alert('Start of the work week!'));
+     }else if (day=='Friday'){
+        console.log(alert('End of the work week!'));
+     }else{
+        console.log(alert('A regular day'));
+     }*/
+       
+     /* switch (day) {
+        case 'Monday':
+           console.log(alert('Start of the work week!')); 
+            break;
+        case 'Friday':
+           console.log(alert('End of the work week!')); 
+            break;
+        default:
+            console.log(alert('A regular day'));
+            
+     }*/
+      
+      //Завдання 5
+      /*let score=+prompt('Enter your score: ');
+      if (score>=50 && score<70){
+        console.log(alert('Your grade is D'));
+      }else if(score>=70 && score<80){
+        console.log(alert('Your grade is C'));
+      }else if(score>=80 && score<90){
+        console.log(alert('Your grade is B'));
+      }else if(score<50){
+        console.log(alert('Your grade is F'));
+      }else{
+        console.log(alert('Your grade is A'));
+      }*/
+      
+      / function (score) {
+       ?score<50
+       :console.log('Your grade is F')
+       ?score>=50 && score<70
+       :console.log('Your grade is D')
+        ?score>=70 && score<80
+       :console.log('Your grade is C')
+       ?score>=80 && score<90
+       :console.log('Your grade is B')
+       ?score>=90
+       :console.log('Your grade is A');}
+       
+       console.log(score)*/
+
+        function (score) {
+      console.log('Your grade is F')
+         ?score<50
+        :console.log('Your grade is D')
+       ?score>=50 && score<70
+       :console.log('Your grade is C')
+        ?score>=70 && score<80
+      :console.log('Your grade is B')
+       ?score>=80 && score<90
+        :console.log('Your grade is A')
+       ?score>=90}
+      console.log(score)
+      //Завдання 6
+     /* let firstName = null;
+      let lastName = undefined;
+      let username = firstName || lastName ?? "Guest";
+
+      console.log(username); // "Guest"*/
+    </script>
+</body>
+</html>
