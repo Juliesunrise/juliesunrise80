@@ -15,7 +15,7 @@ console.log(person);*/
     },
     age:38
 }
-console.log(person);ммммммммммм*/
+console.log(person);*/
 
 //Завдання 3:
 //Створити метод об'єкту bio(), що виводить на консоль ім'я, прізвище та вік person.
