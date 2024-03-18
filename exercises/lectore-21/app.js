@@ -1,18 +1,33 @@
 
-//завдання 3: Використовуючи цикл while, вивести на консоль список елементів з масиву fruits.
-//завдання 4: Використовуючи цикл do...while, вивести на консоль список елементів з масиву fruits.
+
+
 
 //завдання 1: Перетворити рядок fruits у масив. Результат зберегти у масиві fruits.
 const fruits = 'apple banana cantaloupe blueberries grapefruit'.split(' ');
 console.log(fruits);
 //завдання 2:  Використовуючи цикл for, вивести на консоль список елементів з масиву fruits.
-for (i=0;i<fruits.length;i++){
+/*for (i=0;i<fruits.length;i++){
         console.log(fruits[i]);
+}*/
+//завдання 3: Використовуючи цикл while, вивести на консоль список елементів з масиву fruits.
+let i=0
+while (i<fruits.length) {
+    console.log(fruits[i]);
+    i++; 
 }
+//завдання 4: Використовуючи цикл do...while, вивести на консоль список елементів з масиву fruits.
+/* let i=0
+do{
+    console.log(fruits[i]);
+    i++; 
+}
+while (i<fruits.length)*/
+
+
 //завдання 5:  Використовуючи цикл for...of, вивести на консоль список елементів з масиву fruits.
-for (let fruit of fruits){
+/*for (let fruit of fruits){
     console.log(fruit);
-}
+}*/
 //завдання 6: Використовуючи цикл for, вивести на консоль парні елементи з масиву Numbs.
 
 const Numbs = [1,2,3,4,5,6,7,8,9,10];
