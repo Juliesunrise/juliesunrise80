@@ -55,29 +55,44 @@ console.log(names);*/
 /*names = ['Batman', 'Joker', 'Bane'];
 names.unshift('Catwoman');
 console.log(names);
+// завдання 10:Додати 'Catwoman' на початок масиву names, використовуючи оператор ...
+/*names = ['Batman', 'Joker', 'Bane'];
+let newNames=[...names]
+newNames.unshift('Catwoman')
+console.log(newNames)*/
 
-//завдання 10: Додати 'Catwoman' на початок масиву names, використовуючи оператор ...
+// завдання 11:Додати до names елемент
+//'Catwoman', розмістивши його з 
+//індексом 1
+/*names = ['Batman', 'Joker', 'Bane'];
+names.splice(1,0,'Catwoman');
+console.log(names)
 
-names = ['Batman', 'Joker', 'Bane'];*/
+// завдання 12: Видалити елементи 'Catwoman' і 'Joker' з масиву names:
+const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
+names.splice(1,2)
+console.log(names)
+
+// завдання 13: Замінити елементи 'Catwoman' і 'Joker' на 'Alfred'
+const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
+function 
+у масиві names
+const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
+names.splice(1,2,'Alfred')
+console.log(names)
+
+// завдання 14:Перевірити чи існує рядок 'Alfred'
+//у масиві names, і якщо не існує,
+//додати його до кінця масиву.
+const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
 
 
-//завдання 11: Додати до names елемент 'Catwoman', розмістивши його з індексом 1
 
-//names = ['Batman', 'Joker', 'Bane'];
-
-//завдання 12: Видалити елементи 'Catwoman' і 'Joker' з масиву names:
-
-/*const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
-names.pop('Catwoman','Joker')
-console.log(names);*/
-//завдання 13: Замінити елементи 'Catwoman' і 'Joker' на 'Alfred' у масиві names
-
-//const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
-
-//завдання 14: Перевірити чи існує рядок 'Alfred' у масиві names, і якщо не існує, додати його до кінця масиву.
-
-//const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
-
-//завдання 15: Перевірити, чи існує рядок 'Alfred' у масиві names, і якщо існує, видалити його з масиву.
-
-//const names = ['Batman', 'Catwoman', 'Joker', 'Bane']
+//завдання 15:
+const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
+let findName='Alfred';
+if(names.includes(findName){
+let index=names.indexOf(findName);
+names.splice(index,1)
+}
+console.log(names)
