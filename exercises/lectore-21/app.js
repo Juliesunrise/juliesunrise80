@@ -90,6 +90,19 @@ console.log(names)
 const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
 
 
+// завдання 14:Перевірити чи існує рядок 'Alfred'
+//у масиві names, і якщо не існує,
+//додати його до кінця масиву.
+let findName='Alfred'
+const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
+for(let name of names){
+  
+  if(name!=findName){
+    names.push(findName)
+  }
+}console.log(names)
+
+
 
 //завдання 15:
 const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
