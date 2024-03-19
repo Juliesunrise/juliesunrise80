@@ -5,16 +5,19 @@
 //завдання 1: Перетворити рядок fruits у масив. Результат зберегти у масиві fruits.
 const fruits = 'apple banana cantaloupe blueberries grapefruit'.split(' ');
 console.log(fruits);
+
 //завдання 2:  Використовуючи цикл for, вивести на консоль список елементів з масиву fruits.
 /*for (i=0;i<fruits.length;i++){
         console.log(fruits[i]);
 }*/
+
 //завдання 3: Використовуючи цикл while, вивести на консоль список елементів з масиву fruits.
 let i=0
 while (i<fruits.length) {
     console.log(fruits[i]);
     i++; 
 }
+
 //завдання 4: Використовуючи цикл do...while, вивести на консоль список елементів з масиву fruits.
 /* let i=0
 do{
