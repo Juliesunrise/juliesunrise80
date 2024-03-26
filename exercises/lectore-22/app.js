@@ -1,11 +1,15 @@
 const classes = ['first', 'second', 'third', 'fourth'];
 
-
+//Отримати всі елементи з тегом h1. Вивести на консоль тип отриманого об'єкту та його розмір.
+// Використовуючи цикл for, вивести на консоль кожний елемент з отриманого об'єкту.
 let hTag=document.getElementsByTagName('h1')
 
-console.log(hTag)
-console.log(typeof hTag)
+//console.log(hTag)
+//console.log(hTag.nodeType)
+ for(let i=0;i<hTag,length;i++){
 
+     console.log(hTag)
+ }
 
 //Завдання 2: Отримати перший абзац за допомогою document.querySelector('#id') за його ідентифікатором p1. Встановити для нього стиль background-color = "gold"
 let p1=document.querySelector('#p1')
@@ -52,133 +56,22 @@ for (let element of contain2) {
 
 
 
-/*const headers=document.querySelectorAll('.container header')
-let firstTag=headers.firstElementChild
-console.log(headers)
-console.log(firstTag)*/
-/*for (let element of headers){
-    let currentElement=element.firstElementChild;
-    console.log(currentElement)
-    console.log(currentElement.tagName)
-    element++
-    let newTag;
-    switch (currentElement) {
-        case 1:
-            newTag = 'h2';
-            break;
-        case 2:
-            newTag = 'h3';
-            break;
-        case 3:
-            newTag = 'h4';
-            break;
-        default:
-            break;
-    }
-    let replacement =document.createElement(newTag);
-    replacement.innerHTML=currentElement.innerHTML;
-    currentElement.parentNode.replaceChild(replacement, currentElement);
-    console.log(replacement)
-}*/
-
-
-/*for (let element of headers){
-    let currentElement=element.firstElementChild;
-    console.log(currentElement)
-    console.log(currentElement.tagName)
-    element++
-    let newTag;
-    switch (currentElement) {
-        case 1:
-            newTag = 'h2';
-            break;
-        case 2:
-            newTag = 'h3';
-            break;
-        case 3:
-            newTag = 'h4';
-            break;
-        default:
-            break;
-    }
-    let replacement =document.createElement(newTag);
-    replacement.innerHTML=currentElement.innerHTML;
-    currentElement.parentNode.replaceChild(replacement, currentElement);
-    console.log(replacement)
-}
-
-*/
-
-
-/*for (let element of headers) {
-    let currentElement=element.firstElementChild;
-    console.log(currentElement)*/
 
 let headers=document.querySelectorAll('.container header')
-let firstTag=headers.firstElementChild
-console.log(headers.firstElementChild)
-//console.log(firstTag)
-/*for (let index=1;index<firstTag.length;index++){
 
-    if (index) {
-        index++;
-        console.log(headers.tagName);
-    let newTag;
-
-        switch (firstTag) {
-             case 1:
-                 newTag = 'h2';
-                 break;
-             case 2:
-                 newTag = 'h3';
-                 break;
-             case 3:
-                 newTag = 'h4';
-                 break;
-             default:
-                 break;
-         }
-
-       let replacement =document.createElement(newTag);
-  replacement.innerHTML=firstTag.innerHTML;
-        firstTag.parentNode.replaceChild(replacement, firstTag);
-        console.log(replacement)
-
-    }
+console.log(headers)
+for(let i=0;i<headers.length;i++) {
+    let firstTag = headers[i].firstElementChild;
+    let text=firstTag.textContent;
+    let attrId=firstTag.getAttribute('id');
+    let attrClass=firstTag.getAttribute('class');
+   // console.log(attrClass)
+    let newHtml="<h"+(i+1)+">"+text+"</h"+(i+1)+">";
+    firstTag.innerHTML=newHtml;
+    firstTag.setAttribute('id',attrId);
+   firstTag.setAttribute('class',attrClass)
+    console.log(newHtml)
+   console.log(firstTag.getAttribute('id'))
+    console.log(firstTag.getAttribute('class'))
 }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   /* let currentElement = headers[i];
-    let newTagName;
-    switch (i) {
-        case 1:
-            newTagName = 'h2';
-            break;
-        case 2:
-            newTagName = 'h3';
-            break;
-        case 3:
-            newTagName = 'h4';
-            break;
-        default:
-            break;
-    }*/
-
-    /*let newElement = document.createElement(newTagName);
-    newElement.innerHTML = currentElement.innerHTML;
-    currentElement.parentNode.replaceChild(newElement, currentElement)
-    console.log(document.getElementsByClassName('title'))*/
 
