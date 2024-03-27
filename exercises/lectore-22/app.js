@@ -2,13 +2,16 @@ const classes = ['first', 'second', 'third', 'fourth'];
 
 //Отримати всі елементи з тегом h1. Вивести на консоль тип отриманого об'єкту та його розмір.
 // Використовуючи цикл for, вивести на консоль кожний елемент з отриманого об'єкту.
+
 let hTag=document.getElementsByTagName('h1')
+console.log(hTag)
+console.log(typeof hTag)
+console.log(hTag.length)
 
-//console.log(hTag)
 //console.log(hTag.nodeType)
- for(let i=0;i<hTag,length;i++){
+ for(let i=0;i<hTag.length;i++){
 
-     console.log(hTag)
+    console.log(hTag[i])
  }
 
 //Завдання 2: Отримати перший абзац за допомогою document.querySelector('#id') за його ідентифікатором p1. Встановити для нього стиль background-color = "gold"
