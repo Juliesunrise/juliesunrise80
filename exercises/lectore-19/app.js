@@ -5,6 +5,7 @@ let str2 = "I'm a string!";
 
 console.log(str1.length);
 console.log(str2.length);
+console.log(str1.length == str2.length);
 console.log(str1 === str2);
 //Відповідь: ці рядки абсолютно однакові
    
@@ -53,7 +54,7 @@ console.log(lastChar(str3));
 /*let a = 'When candles are out,';
 let b = 'all cats are grey.';
 
-console.log(a.concat(b));*/
+console.log(a.concat('',b));*/
 
 //Завдання 7:Використовуючи змінні a, b, fact, змінити значення fact та вивести його на консоль, щоб результат виглядав так: Fifteen is the same as 15
 
@@ -85,15 +86,15 @@ console.log(greeting());
 //Завдання 10: Використовуючи функцію greeting, створити такий шаблон:
 //<div><h1>Hello, Tom Cat!</h1></div>
  
-let div = document.createElement('div')
+/*let div = document.createElement('div')
 console.log(div);
 document.body.append(div);
 let heading = document.querySelector('div')
 div.insertAdjacentHTML('afterbegin', '<h1></h1>')
 let head = document.querySelector('h1')
-head.innerHTML=greeting()
-
-
+head.innerHTML=greeting()*/
+let heading=(""+""+greeting(firstName,lastName)+"")
+console.log(heading)
 //Завдання 11
 let string1 = "  The name of our game  ";
 

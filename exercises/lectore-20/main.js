@@ -1,14 +1,14 @@
 //Завдання 1
 //Створити об'єкт person, що має властивості name з типом рядка та age з типом цілого числа. Надати значення цим властивостям. Вивести значення властивостей об'єкту на консоль
-/*let person = {
+let person = {
     name:'Yuliia',
     age:38
 }
-console.log(person);*/
-
+console.log(person.age);
+console.log(person.name);
 //Завдання 2
 //Змінити тип властивості name з рядка на об'єкт, з ключами firstName та lastName. Надати значення цим властивостям. Вивести значення властивостей об'єкту на консоль.
-/*   let person = {
+  /* let person = {
      userName:{
         firstName: 'Yuliia',
         lastName: 'Makarova'
@@ -71,7 +71,7 @@ function createPerson(name){
 //Створити функцію-конструктор Person, що приймає аргумент name та повертає новий об'єкт з властивістю 
 //name та методом introduceSelf.Створити за допомогою Person 2 екземпляри об'єкта mary та tom.
 //визначити, чи містить об'єкт mary властивість під назвою prop.
-function person(name){
+/*function person(name){
     this.name = name;
     this.introduseSelf=function(){
             return'Hello, my name is' +' '+ `${this.name}`
@@ -81,7 +81,7 @@ function person(name){
     let person_1=new person('Mary');
     let person_2=new person('Tom');
     console.log(person_1.introduseSelf());
-    console.log(person_2.introduseSelf())
+    console.log(person_2.introduseSelf())*/
 
     
     
