@@ -27,27 +27,15 @@ const listWithHref = [
     {'react.js': "https://react.dev"}
 ];
 
-let URL
-
-let ol=document.createElement('ol');
-parentElement.append(ol);
+let ol=document.createElement('ol')
+listWithHref.forEach((elem)=>{
+    let key=Object.keys(elem)[0];
+    let link=Object.values(elem)[0];
+    let listElement=`<li><a href='${link}'>${key}</a></li>`;
+    ol.insertAdjacentHTML('beforeend',listElement);
+})
+document.body.appendChild(ol)
 console.log(ol)
-for(let i=0;i<listWithHref.length;i++){
-    let li2 = document.createElement('li');
-    let a=document.createElement('a');
-       for (let obj in listWithHref ){
-           let link = listWithHref[obj];
-            for(let key in link) {
-               URL=link[key];
-               console.log(URL);
-
-        }
-    }
-    ol.appendChild(li2);
-    li2.appendChild(a);
-    a.appendChild(document.createTextNode(list[i]));
-    a.href=URL;
-}
 
 //Завдання 3:
 //Маємо масив students.Використовуючи метод createElement, створити таблицю на основі масиву students.
@@ -60,3 +48,38 @@ const students = [
     {'firstName': 'John', 'lastName': 'Doe', 'degree': 400},
     {'firstName': 'James', 'lastName': 'Bond', 'degree': 700},
 ]
+let table=document.createElement('table');
+let head=document.createElement('thead');
+let body=document.createElement('tbody');
+
+let fKey
+let secKey
+let lastKey
+
+students.forEach((elem)=>{
+    fKey=Object.keys(elem)[0];
+    secKey=Object.keys(elem)[1];
+    lastKey=Object.keys(elem)[2];
+
+   let fName=Object.values(elem)[0];
+   let lName=Object.values(elem)[1];
+   let deg=Object.values(elem)[2];
+   let tbody=`<tr><td>${fName}</td><td>${lName}</td><td>${deg}</td></tr>`
+    body.insertAdjacentHTML('beforeend',tbody);
+
+})
+
+let headRow=`<tr><th>${fKey}</th><th>${secKey}</th><th>${lastKey}</th></tr>`
+head.insertAdjacentHTML('beforeend',headRow);
+
+document.body.append(table)
+table.append(head)
+table.append(body)
+
+head.style.backgroundColor='blue'
+head.style.color='azure'
+table.style.width='100%'
+body.style.textAlign='center'
+
+
+
