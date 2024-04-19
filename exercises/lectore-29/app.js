@@ -5,8 +5,7 @@ class AuthException extends Error {
     super(mess);       
     this.name = code;
     this.code = code;
-    this.message = mess;
-   
+    this.message = mess;   
   }  
   toString() {
     return this.message;
